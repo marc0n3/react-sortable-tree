@@ -39,10 +39,10 @@ function getTargetDepth(dropTargetProps, monitor) {
         dropTargetDepth = Math.min(rowAbove.path.length, dropTargetProps.path.length);
     }
 
-    const blocksOffset = Math.round(
+    const blocksOffset = 0;/*Math.round(
         monitor.getDifferenceFromInitialOffset().x /
         dropTargetProps.scaffoldBlockPxWidth
-    );
+    );*/
 
     let targetDepth = Math.min(dropTargetDepth, Math.max(0, draggedItem.path.length + blocksOffset - 1));
 
